@@ -1,0 +1,913 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Jul 15 15:05:45 2023
+# Process ID: 1448
+# Current directory: C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1/sccomp_dataflow.vds
+# Journal file: C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23168 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 306.109 ; gain = 98.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sccomp_dataflow' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v:22]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/imem.v:23]
+INFO: [Synth 8-638] synthesizing module 'imem_ip' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1/.Xil/Vivado-1448-LAPTOP-QVK9Q9JF/realtime/imem_ip_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem_ip' (1#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1/.Xil/Vivado-1448-LAPTOP-QVK9Q9JF/realtime/imem_ip_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem' (2#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/imem.v:23]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/dmem.v:22]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (3#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/dmem.v:22]
+INFO: [Synth 8-638] synthesizing module 'cpu54' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:23]
+	Parameter systcall_func bound to: 5'b01000 
+	Parameter break_func bound to: 5'b01001 
+	Parameter teq_func bound to: 5'b01101 
+INFO: [Synth 8-638] synthesizing module 'cp0' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:23]
+	Parameter status_reg bound to: 12 - type: integer 
+	Parameter cause_reg bound to: 13 - type: integer 
+	Parameter epc_reg bound to: 14 - type: integer 
+	Parameter IE_p bound to: 0 - type: integer 
+	Parameter systcall_p bound to: 1 - type: integer 
+	Parameter break_p bound to: 2 - type: integer 
+	Parameter teq_p bound to: 3 - type: integer 
+	Parameter systcall_func bound to: 5'b01000 
+	Parameter break_func bound to: 5'b01001 
+	Parameter teq_func bound to: 5'b01101 
+WARNING: [Synth 8-5788] Register CP0_reg_reg[31] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[30] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[29] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[28] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[27] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[26] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[25] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[24] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[23] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[22] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[21] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[20] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[19] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[18] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[17] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[16] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[15] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[11] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[10] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[9] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[8] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[7] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[6] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[5] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[4] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[3] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[2] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[1] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+WARNING: [Synth 8-5788] Register CP0_reg_reg[0] in module cp0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:49]
+INFO: [Synth 8-256] done synthesizing module 'cp0' (4#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cp0.v:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:23]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[31] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[30] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[29] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[28] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[27] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[26] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[25] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[24] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[23] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[22] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[21] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[20] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[19] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[18] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[17] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[16] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[15] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[14] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[13] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[12] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[11] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[10] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[9] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[8] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[7] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[6] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[5] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[4] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[3] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[2] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[1] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[0] in module regfile. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:39]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (5#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:23]
+	Parameter Addu bound to: 4'b0000 
+	Parameter Add bound to: 4'b0010 
+	Parameter Subu bound to: 4'b0001 
+	Parameter Sub bound to: 4'b0011 
+	Parameter And bound to: 4'b0100 
+	Parameter Or bound to: 4'b0101 
+	Parameter Xor bound to: 4'b0110 
+	Parameter Nor bound to: 4'b0111 
+	Parameter Lui bound to: 4'b1000 
+	Parameter Slt bound to: 4'b1011 
+	Parameter Sltu bound to: 4'b1010 
+	Parameter Sra bound to: 4'b1100 
+	Parameter Sll bound to: 4'b1110 
+	Parameter Srl bound to: 4'b1101 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:54]
+INFO: [Synth 8-256] done synthesizing module 'alu' (6#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-638] synthesizing module 'clz' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/clz.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clz' (7#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/clz.v:23]
+INFO: [Synth 8-638] synthesizing module 'multu' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/multu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multu' (8#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/multu.v:23]
+INFO: [Synth 8-638] synthesizing module 'mult' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/mult.v:23]
+INFO: [Synth 8-638] synthesizing module 'complement32' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/complement.v:23]
+INFO: [Synth 8-256] done synthesizing module 'complement32' (9#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/complement.v:23]
+INFO: [Synth 8-638] synthesizing module 'complement64' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/complement.v:32]
+INFO: [Synth 8-256] done synthesizing module 'complement64' (10#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/complement.v:32]
+INFO: [Synth 8-256] done synthesizing module 'mult' (11#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/mult.v:23]
+INFO: [Synth 8-638] synthesizing module 'divu' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:23]
+WARNING: [Synth 8-5788] Register reg_r_reg in module divu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:41]
+WARNING: [Synth 8-5788] Register r_sign_reg in module divu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:41]
+WARNING: [Synth 8-5788] Register reg_q_reg in module divu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:43]
+WARNING: [Synth 8-5788] Register reg_b_reg in module divu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:41]
+INFO: [Synth 8-256] done synthesizing module 'divu' (12#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:23]
+INFO: [Synth 8-638] synthesizing module 'div' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'b' does not match port width (32) of module 'complement32' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:43]
+WARNING: [Synth 8-689] width (1) of port connection 'b' does not match port width (32) of module 'complement32' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:44]
+WARNING: [Synth 8-3848] Net q in module/entity div does not have driver. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:30]
+WARNING: [Synth 8-3848] Net r in module/entity div does not have driver. [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:31]
+INFO: [Synth 8-256] done synthesizing module 'div' (13#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/div.v:23]
+INFO: [Synth 8-638] synthesizing module 'hilo' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/hilo.v:23]
+WARNING: [Synth 8-5788] Register hi_rdata_reg in module hilo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/hilo.v:43]
+WARNING: [Synth 8-5788] Register lo_rdata_reg in module hilo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/hilo.v:45]
+INFO: [Synth 8-256] done synthesizing module 'hilo' (14#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/hilo.v:23]
+WARNING: [Synth 8-5788] Register pc_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:142]
+WARNING: [Synth 8-5788] Register Rsc_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:157]
+WARNING: [Synth 8-5788] Register Rtc_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:158]
+WARNING: [Synth 8-5788] Register Rdc_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:159]
+WARNING: [Synth 8-5788] Register jal_res_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:258]
+WARNING: [Synth 8-5788] Register a_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:167]
+WARNING: [Synth 8-5788] Register b_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:168]
+WARNING: [Synth 8-5788] Register div_start_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:209]
+WARNING: [Synth 8-5788] Register dm_add_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:356]
+WARNING: [Synth 8-5788] Register dm_wdata_reg in module cpu54 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:358]
+INFO: [Synth 8-256] done synthesizing module 'cpu54' (15#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/cpu54.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sccomp_dataflow' (16#1) [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v:22]
+WARNING: [Synth 8-3331] design div has unconnected port q[31]
+WARNING: [Synth 8-3331] design div has unconnected port q[30]
+WARNING: [Synth 8-3331] design div has unconnected port q[29]
+WARNING: [Synth 8-3331] design div has unconnected port q[28]
+WARNING: [Synth 8-3331] design div has unconnected port q[27]
+WARNING: [Synth 8-3331] design div has unconnected port q[26]
+WARNING: [Synth 8-3331] design div has unconnected port q[25]
+WARNING: [Synth 8-3331] design div has unconnected port q[24]
+WARNING: [Synth 8-3331] design div has unconnected port q[23]
+WARNING: [Synth 8-3331] design div has unconnected port q[22]
+WARNING: [Synth 8-3331] design div has unconnected port q[21]
+WARNING: [Synth 8-3331] design div has unconnected port q[20]
+WARNING: [Synth 8-3331] design div has unconnected port q[19]
+WARNING: [Synth 8-3331] design div has unconnected port q[18]
+WARNING: [Synth 8-3331] design div has unconnected port q[17]
+WARNING: [Synth 8-3331] design div has unconnected port q[16]
+WARNING: [Synth 8-3331] design div has unconnected port q[15]
+WARNING: [Synth 8-3331] design div has unconnected port q[14]
+WARNING: [Synth 8-3331] design div has unconnected port q[13]
+WARNING: [Synth 8-3331] design div has unconnected port q[12]
+WARNING: [Synth 8-3331] design div has unconnected port q[11]
+WARNING: [Synth 8-3331] design div has unconnected port q[10]
+WARNING: [Synth 8-3331] design div has unconnected port q[9]
+WARNING: [Synth 8-3331] design div has unconnected port q[8]
+WARNING: [Synth 8-3331] design div has unconnected port q[7]
+WARNING: [Synth 8-3331] design div has unconnected port q[6]
+WARNING: [Synth 8-3331] design div has unconnected port q[5]
+WARNING: [Synth 8-3331] design div has unconnected port q[4]
+WARNING: [Synth 8-3331] design div has unconnected port q[3]
+WARNING: [Synth 8-3331] design div has unconnected port q[2]
+WARNING: [Synth 8-3331] design div has unconnected port q[1]
+WARNING: [Synth 8-3331] design div has unconnected port q[0]
+WARNING: [Synth 8-3331] design div has unconnected port r[31]
+WARNING: [Synth 8-3331] design div has unconnected port r[30]
+WARNING: [Synth 8-3331] design div has unconnected port r[29]
+WARNING: [Synth 8-3331] design div has unconnected port r[28]
+WARNING: [Synth 8-3331] design div has unconnected port r[27]
+WARNING: [Synth 8-3331] design div has unconnected port r[26]
+WARNING: [Synth 8-3331] design div has unconnected port r[25]
+WARNING: [Synth 8-3331] design div has unconnected port r[24]
+WARNING: [Synth 8-3331] design div has unconnected port r[23]
+WARNING: [Synth 8-3331] design div has unconnected port r[22]
+WARNING: [Synth 8-3331] design div has unconnected port r[21]
+WARNING: [Synth 8-3331] design div has unconnected port r[20]
+WARNING: [Synth 8-3331] design div has unconnected port r[19]
+WARNING: [Synth 8-3331] design div has unconnected port r[18]
+WARNING: [Synth 8-3331] design div has unconnected port r[17]
+WARNING: [Synth 8-3331] design div has unconnected port r[16]
+WARNING: [Synth 8-3331] design div has unconnected port r[15]
+WARNING: [Synth 8-3331] design div has unconnected port r[14]
+WARNING: [Synth 8-3331] design div has unconnected port r[13]
+WARNING: [Synth 8-3331] design div has unconnected port r[12]
+WARNING: [Synth 8-3331] design div has unconnected port r[11]
+WARNING: [Synth 8-3331] design div has unconnected port r[10]
+WARNING: [Synth 8-3331] design div has unconnected port r[9]
+WARNING: [Synth 8-3331] design div has unconnected port r[8]
+WARNING: [Synth 8-3331] design div has unconnected port r[7]
+WARNING: [Synth 8-3331] design div has unconnected port r[6]
+WARNING: [Synth 8-3331] design div has unconnected port r[5]
+WARNING: [Synth 8-3331] design div has unconnected port r[4]
+WARNING: [Synth 8-3331] design div has unconnected port r[3]
+WARNING: [Synth 8-3331] design div has unconnected port r[2]
+WARNING: [Synth 8-3331] design div has unconnected port r[1]
+WARNING: [Synth 8-3331] design div has unconnected port r[0]
+WARNING: [Synth 8-3331] design cp0 has unconnected port mfc0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 350.039 ; gain = 142.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 350.039 ; gain = 142.801
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'imem_ip' instantiated as 'imem/inst_mem' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/imem.v:28]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1/.Xil/Vivado-1448-LAPTOP-QVK9Q9JF/dcp/imem_ip_in_context.xdc] for cell 'imem/inst_mem'
+Finished Parsing XDC File [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.runs/synth_1/.Xil/Vivado-1448-LAPTOP-QVK9Q9JF/dcp/imem_ip_in_context.xdc] for cell 'imem/inst_mem'
+Parsing XDC File [C:/BaiduSyncdisk/Principles of computer composition/CPU54/54条指令CPU实验相关文档/54条指令CPU实验相关文档/54条CPU后仿真和下板说明/icf.xdc]
+Finished Parsing XDC File [C:/BaiduSyncdisk/Principles of computer composition/CPU54/54条指令CPU实验相关文档/54条指令CPU实验相关文档/54条CPU后仿真和下板说明/icf.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 668.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:54]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/divu.v:41]
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pc_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cycle" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cycle" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cycle" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'sresult_reg' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_reg' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'overflow_reg' [C:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.srcs/sources_1/new/alu.v:62]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  32 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 81    
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 67    
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 55    
+	   4 Input     32 Bit        Muxes := 4     
+	  15 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 76    
+	   3 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module cp0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 2     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  15 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 4     
+Module clz 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      6 Bit        Muxes := 1     
+Module multu 
+Detailed RTL Component Info : 
++---Adders : 
+	  32 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 33    
+	   2 Input     32 Bit        Muxes := 1     
+Module complement32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module complement64 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module mult 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module divu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module div 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module hilo 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+Module cpu54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   4 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CP0_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dmem/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dmem/" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3331] design div has unconnected port q[31]
+WARNING: [Synth 8-3331] design div has unconnected port q[30]
+WARNING: [Synth 8-3331] design div has unconnected port q[29]
+WARNING: [Synth 8-3331] design div has unconnected port q[28]
+WARNING: [Synth 8-3331] design div has unconnected port q[27]
+WARNING: [Synth 8-3331] design div has unconnected port q[26]
+WARNING: [Synth 8-3331] design div has unconnected port q[25]
+WARNING: [Synth 8-3331] design div has unconnected port q[24]
+WARNING: [Synth 8-3331] design div has unconnected port q[23]
+WARNING: [Synth 8-3331] design div has unconnected port q[22]
+WARNING: [Synth 8-3331] design div has unconnected port q[21]
+WARNING: [Synth 8-3331] design div has unconnected port q[20]
+WARNING: [Synth 8-3331] design div has unconnected port q[19]
+WARNING: [Synth 8-3331] design div has unconnected port q[18]
+WARNING: [Synth 8-3331] design div has unconnected port q[17]
+WARNING: [Synth 8-3331] design div has unconnected port q[16]
+WARNING: [Synth 8-3331] design div has unconnected port q[15]
+WARNING: [Synth 8-3331] design div has unconnected port q[14]
+WARNING: [Synth 8-3331] design div has unconnected port q[13]
+WARNING: [Synth 8-3331] design div has unconnected port q[12]
+WARNING: [Synth 8-3331] design div has unconnected port q[11]
+WARNING: [Synth 8-3331] design div has unconnected port q[10]
+WARNING: [Synth 8-3331] design div has unconnected port q[9]
+WARNING: [Synth 8-3331] design div has unconnected port q[8]
+WARNING: [Synth 8-3331] design div has unconnected port q[7]
+WARNING: [Synth 8-3331] design div has unconnected port q[6]
+WARNING: [Synth 8-3331] design div has unconnected port q[5]
+WARNING: [Synth 8-3331] design div has unconnected port q[4]
+WARNING: [Synth 8-3331] design div has unconnected port q[3]
+WARNING: [Synth 8-3331] design div has unconnected port q[2]
+WARNING: [Synth 8-3331] design div has unconnected port q[1]
+WARNING: [Synth 8-3331] design div has unconnected port q[0]
+WARNING: [Synth 8-3331] design div has unconnected port r[31]
+WARNING: [Synth 8-3331] design div has unconnected port r[30]
+WARNING: [Synth 8-3331] design div has unconnected port r[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 668.848 ; gain = 461.609
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+----------------+-----------+----------------------+-------------------+
+|Module Name     | RTL Object     | Inference | Size (Depth x Width) | Primitives        | 
++----------------+----------------+-----------+----------------------+-------------------+
+|sccomp_dataflow | dmem/d_mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++----------------+----------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (result_reg[32]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (carry_reg) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (overflow_reg) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/r_sign_reg) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[31]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[30]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[29]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[28]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[27]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[26]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[25]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[24]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[23]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[22]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[21]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[20]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[19]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[18]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[17]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[16]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[15]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[14]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[13]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[12]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[11]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[10]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[9]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[8]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[7]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[6]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[5]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[4]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[3]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[2]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[1]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_b_reg[0]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[31]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[30]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[29]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[28]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[27]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[26]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[25]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[24]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[23]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[22]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[21]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[20]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[19]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[18]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[17]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[16]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[15]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[14]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[13]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[12]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[11]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[10]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[9]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[8]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[7]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[6]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[5]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[4]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[3]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[2]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[1]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_r_reg[0]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[31]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[30]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[29]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[28]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[27]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[26]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[25]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[24]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[23]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[22]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[21]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[20]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[19]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[18]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[17]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[16]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[15]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[14]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[13]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[12]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[11]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[10]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[9]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[8]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[7]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[6]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[5]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[4]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[3]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[2]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[1]) is unused and will be removed from module div.
+WARNING: [Synth 8-3332] Sequential element (divison_unit/reg_q_reg[0]) is unused and will be removed from module div.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 668.848 ; gain = 461.609
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 668.848 ; gain = 461.609
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 724.570 ; gain = 517.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 780.805 ; gain = 573.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/cpu_ref/array_reg_reg[0][30] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 822.059 ; gain = 614.820
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |imem_ip       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |imem_ip   |     1|
+|2     |BUFG      |     3|
+|3     |CARRY4    |   444|
+|4     |LUT1      |   216|
+|5     |LUT2      |  1586|
+|6     |LUT3      |   623|
+|7     |LUT4      |   709|
+|8     |LUT5      |   543|
+|9     |LUT6      |  2764|
+|10    |MUXF7     |   406|
+|11    |MUXF8     |    16|
+|12    |RAM256X1S |   128|
+|13    |FDCE      |   204|
+|14    |FDPE      |     6|
+|15    |FDRE      |  2311|
+|16    |FDSE      |    18|
+|17    |LD        |    64|
+|18    |IBUF      |     2|
+|19    |OBUF      |    64|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------+--------+------+
+|      |Instance           |Module  |Cells |
++------+-------------------+--------+------+
+|1     |top                |        | 10139|
+|2     |  dmem             |dmem    |   236|
+|3     |  imem             |imem    |   732|
+|4     |  sccpu            |cpu54   |  9102|
+|5     |    cp0            |cp0     |  1509|
+|6     |    cpu_alu        |alu     |   863|
+|7     |    cpu_ref        |regfile |  1956|
+|8     |    div            |div     |    15|
+|9     |      divison_unit |divu_1  |    15|
+|10    |    divu           |divu    |   334|
+|11    |    hilo           |hilo    |   133|
+|12    |    mult           |mult    |  2075|
+|13    |      unsigned_res |multu_0 |  2075|
+|14    |    multu          |multu   |  1618|
++------+-------------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.059 ; gain = 614.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 201 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 822.059 ; gain = 268.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 822.059 ; gain = 614.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 638 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 192 instances were transformed.
+  LD => LDCE: 64 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+152 Infos, 254 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 822.059 ; gain = 590.910
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 822.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 15 15:06:42 2023...

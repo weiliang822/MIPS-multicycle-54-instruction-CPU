@@ -1,0 +1,370 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/BaiduSyncdisk/Principles of computer composition/CPU54/CPU54/CPU54.sim/sim_1/behav
+valu
+Z1 !s110 1689065556
+!i10b 1
+!s100 =Qi5Gnn933B9zn;oZI@<[0
+IoBWnSH73Kg2Yab=6OIo=40
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1688545739
+8../../../CPU54.srcs/sources_1/new/alu.v
+F../../../CPU54.srcs/sources_1/new/alu.v
+Z3 L0 23
+Z4 OP;L;10.4c;61
+r1
+!s85 0
+31
+Z5 !s108 1689065556.000000
+Z6 !s107 ../../../CPU54.srcs/sources_1/new/cpu54_tb.v|../../../CPU54.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU54.srcs/sources_1/new/cpu54.v|../../../CPU54.srcs/sources_1/new/dmem.v|../../../CPU54.srcs/sources_1/new/imem.v|../../../CPU54.srcs/sources_1/new/alu.v|../../../CPU54.srcs/sources_1/new/clz.v|../../../CPU54.srcs/sources_1/new/cp0.v|../../../CPU54.srcs/sources_1/new/div.v|../../../CPU54.srcs/sources_1/new/hilo.v|../../../CPU54.srcs/sources_1/new/mult.v|../../../CPU54.srcs/sources_1/new/regfile.v|../../../CPU54.srcs/sources_1/ip/imem_ip/sim/imem_ip.v|
+Z7 !s90 -64|-incr|-work|xil_defaultlib|../../../CPU54.srcs/sources_1/ip/imem_ip/sim/imem_ip.v|../../../CPU54.srcs/sources_1/new/regfile.v|../../../CPU54.srcs/sources_1/new/mult.v|../../../CPU54.srcs/sources_1/new/hilo.v|../../../CPU54.srcs/sources_1/new/div.v|../../../CPU54.srcs/sources_1/new/cp0.v|../../../CPU54.srcs/sources_1/new/clz.v|../../../CPU54.srcs/sources_1/new/alu.v|../../../CPU54.srcs/sources_1/new/imem.v|../../../CPU54.srcs/sources_1/new/dmem.v|../../../CPU54.srcs/sources_1/new/cpu54.v|../../../CPU54.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU54.srcs/sources_1/new/cpu54_tb.v|
+!i113 1
+Z8 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vclz
+R1
+!i10b 1
+!s100 OfQC:U4RI>6iBC5S2:70W2
+IR5kLzYXC>]I]X?;o[6NN00
+R2
+R0
+w1688988635
+8../../../CPU54.srcs/sources_1/new/clz.v
+F../../../CPU54.srcs/sources_1/new/clz.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vcomplement32
+R1
+!i10b 1
+!s100 F3emS`GI1J2cFM`cZkf3]2
+IeeQCT4QZC<6zziJf9Z>[E1
+R2
+R0
+Z9 w1688990489
+Z10 8../../../CPU54.srcs/sources_1/new/complement.v
+Z11 F../../../CPU54.srcs/sources_1/new/complement.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 ../../../CPU54.srcs/sources_1/new/divu.v|../../../CPU54.srcs/sources_1/new/multu.v|../../../CPU54.srcs/sources_1/new/complement.v|
+Z13 !s90 -64|-incr|-work|xil_defaultlib|../../../CPU54.srcs/sources_1/new/complement.v|../../../CPU54.srcs/sources_1/new/multu.v|../../../CPU54.srcs/sources_1/new/divu.v|
+!i113 1
+R8
+vcomplement64
+R1
+!i10b 1
+!s100 4_ilYiE_gH4E;fWVP4[Dj2
+I<:6dgjU9WZn]8=I;?O8BV3
+R2
+R0
+R9
+R10
+R11
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R8
+vcp0
+R1
+!i10b 1
+!s100 Min2861BmM33C1lSSKL@Q0
+Ik86kCC9LAgNfeQPH?gmTV1
+R2
+R0
+w1688672947
+8../../../CPU54.srcs/sources_1/new/cp0.v
+F../../../CPU54.srcs/sources_1/new/cp0.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vcpu54
+R1
+!i10b 1
+!s100 >F5Y3k[7<e4ZFzVL1<_O60
+IDo=jCWV_`6[9DN=Q?P`6<0
+R2
+R0
+w1688989624
+8../../../CPU54.srcs/sources_1/new/cpu54.v
+F../../../CPU54.srcs/sources_1/new/cpu54.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vcpu54_tb
+R1
+!i10b 1
+!s100 W]8R?`fP_MUi1im_^TCS60
+IC;SO9FI@PSYzDZHfbOTBz0
+R2
+R0
+w1688990446
+8../../../CPU54.srcs/sources_1/new/cpu54_tb.v
+F../../../CPU54.srcs/sources_1/new/cpu54_tb.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vdiv
+R1
+!i10b 1
+!s100 kcj9Hd?jJB[<`HNSiQ2Cl1
+I[c3[H9HN]4oUBg2dIG3J>2
+R2
+R0
+w1688990393
+8../../../CPU54.srcs/sources_1/new/div.v
+F../../../CPU54.srcs/sources_1/new/div.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vdivu
+R1
+!i10b 1
+!s100 7;HmoXhE2zgGZNPV;J0cQ1
+I]oDceHJ[_hW7l=Y8NQc_i1
+R2
+R0
+w1688990386
+8../../../CPU54.srcs/sources_1/new/divu.v
+F../../../CPU54.srcs/sources_1/new/divu.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R8
+vdmem
+R1
+!i10b 1
+!s100 <EM[5e@gJY8JhRLj[>7gf1
+IWb=@2`k_glODb^GTlAD2n1
+R2
+R0
+w1688830378
+8../../../CPU54.srcs/sources_1/new/dmem.v
+F../../../CPU54.srcs/sources_1/new/dmem.v
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vglbl
+R1
+!i10b 1
+!s100 g=dL3UKAkhNRkQ:7=fPzF1
+IkJ@CGO[n5[_3E=ZkTzmEk2
+R2
+R0
+w1464879896
+8glbl.v
+Fglbl.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R8
+vhilo
+R1
+!i10b 1
+!s100 ?ej`jzbPVhegTha[lQ]Di3
+IUT11;Oe41K4jR2IO3[VkZ3
+R2
+R0
+w1688987855
+8../../../CPU54.srcs/sources_1/new/hilo.v
+F../../../CPU54.srcs/sources_1/new/hilo.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vimem
+R1
+!i10b 1
+!s100 oFofV9`8X6>ZAVWCX4;K02
+I^glGSU`c8S5Ac8_SnAoVL1
+R2
+R0
+w1688544986
+8../../../CPU54.srcs/sources_1/new/imem.v
+F../../../CPU54.srcs/sources_1/new/imem.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vimem_ip
+R1
+!i10b 1
+!s100 [NQhmElh5Lj1n;9MbaS@:0
+I2bXbgl>W@`30Ee=naa]l:2
+R2
+R0
+w1688830833
+8../../../CPU54.srcs/sources_1/ip/imem_ip/sim/imem_ip.v
+F../../../CPU54.srcs/sources_1/ip/imem_ip/sim/imem_ip.v
+L0 56
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vmult
+R1
+!i10b 1
+!s100 i`_J7?cfJ<oiC[0[_J[D32
+I1`G8O?Zn8GSBM_m0Wl]cI3
+R2
+R0
+w1688990400
+8../../../CPU54.srcs/sources_1/new/mult.v
+F../../../CPU54.srcs/sources_1/new/mult.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vmultu
+R1
+!i10b 1
+!s100 647ocEBIRWFdW^XD03>V81
+IMXhcCPUkJHkL@N^gSkfC21
+R2
+R0
+w1688990466
+8../../../CPU54.srcs/sources_1/new/multu.v
+F../../../CPU54.srcs/sources_1/new/multu.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R8
+vregfile
+R1
+!i10b 1
+!s100 ]E7JaQQ:amBX4XQ@9E^kX3
+IB]AU`]gUEAlnD9AdRA[JR0
+R2
+R0
+w1688544816
+8../../../CPU54.srcs/sources_1/new/regfile.v
+F../../../CPU54.srcs/sources_1/new/regfile.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vsccomp_dataflow
+R1
+!i10b 1
+!s100 4FCIMQj=^9Q]bH<MQPNc03
+I>f^=jSQJefNS4YjzK[9WS1
+R2
+R0
+w1688924600
+8../../../CPU54.srcs/sources_1/new/sccomp_dataflow.v
+F../../../CPU54.srcs/sources_1/new/sccomp_dataflow.v
+L0 22
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8

@@ -1,0 +1,101 @@
+# do {cpu54_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L unisims_ver -L unimacro_ver -L secureip -L xil_defaultlib -L dist_mem_gen_v8_0_10 -lib xil_defaultlib xil_defaultlib.cpu54_tb xil_defaultlib.glbl 
+# Start time: 16:52:43 on Jul 11,2023
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.cpu54_tb
+# Loading xil_defaultlib.sccomp_dataflow
+# Loading xil_defaultlib.imem
+# Loading xil_defaultlib.imem_ip
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10
+# Loading xil_defaultlib.dmem
+# Loading xil_defaultlib.cpu54
+# Loading xil_defaultlib.cp0
+# Loading xil_defaultlib.regfile
+# Loading xil_defaultlib.alu
+# Loading xil_defaultlib.clz
+# Loading xil_defaultlib.multu
+# Loading xil_defaultlib.mult
+# Loading xil_defaultlib.complement32
+# Loading xil_defaultlib.complement64
+# Loading xil_defaultlib.divu
+# Loading xil_defaultlib.div
+# Loading xil_defaultlib.hilo
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-3015) ../../../CPU54.srcs/sources_1/new/sccomp_dataflow.v(52): [PCDPC] - Port size (1) does not match connection size (32) for port 'ena'. The port definition is at: ../../../CPU54.srcs/sources_1/new/cpu54.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu54_tb/sc/sccpu File: ../../../CPU54.srcs/sources_1/new/cpu54.v
+# ** Warning: (vsim-3015) ../../../CPU54.srcs/sources_1/new/div.v(43): [PCDPC] - Port size (32) does not match connection size (1) for port 'b'. The port definition is at: ../../../CPU54.srcs/sources_1/new/complement.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu54_tb/sc/sccpu/div/c_q File: ../../../CPU54.srcs/sources_1/new/complement.v
+# ** Warning: (vsim-3015) ../../../CPU54.srcs/sources_1/new/div.v(44): [PCDPC] - Port size (32) does not match connection size (1) for port 'b'. The port definition is at: ../../../CPU54.srcs/sources_1/new/complement.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu54_tb/sc/sccpu/div/c_r File: ../../../CPU54.srcs/sources_1/new/complement.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 1315 of file "imem_ip.mif". Expected 2048, found 1314.    : ../../../CPU54.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu54_tb/sc/imem/inst_mem/inst
+# inst:xxxxxxxx cycle:xxxxx pc:xxxxxxxx pc_temp:xxxxxxxx a:xxxxxxxx b:xxxxxxxx mul_reg:xxxxxxxxxxxxxxxx rd:xxxxxxxx
+# inst:xxxxxxxx cycle:00001 pc:xxxxxxxx pc_temp:00400000 a:xxxxxxxx b:xxxxxxxx mul_reg:xxxxxxxxxxxxxxxx rd:xxxxxxxx
+# inst:08100004 cycle:00010 pc:00400000 pc_temp:00400004 a:xxxxxxxx b:xxxxxxxx mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:08100004 cycle:00001 pc:00400000 pc_temp:00400010 a:xxxxxxxx b:xxxxxxxx mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:00000000 cycle:00010 pc:00400010 pc_temp:00400014 a:xxxxxxxx b:xxxxxxxx mul_reg:zzzzzzzzzzzzzzzz rd:xxxxxxxx
+# inst:00000000 cycle:00100 pc:00400010 pc_temp:00400014 a:xxxxxxxx b:xxxxxxxx mul_reg:zzzzzzzzzzzzzzzz rd:xxxxxxxx
+# inst:00000000 cycle:10000 pc:00400010 pc_temp:00400014 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:00000000 cycle:00001 pc:00400010 pc_temp:00400014 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:3c1d1001 cycle:00010 pc:00400014 pc_temp:00400018 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:3c1d1001 cycle:00100 pc:00400014 pc_temp:00400018 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:3c1d1001 cycle:10000 pc:00400014 pc_temp:00400018 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:10010000
+# inst:3c1d1001 cycle:00001 pc:00400014 pc_temp:00400018 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:10010000
+# inst:201c0001 cycle:00010 pc:00400018 pc_temp:0040001c a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:00001001
+# inst:201c0001 cycle:00100 pc:00400018 pc_temp:0040001c a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:00001001
+# inst:201c0001 cycle:10000 pc:00400018 pc_temp:0040001c a:00000000 b:00000001 mul_reg:zzzzzzzzzzzzzzzz rd:00000001
+# inst:201c0001 cycle:00001 pc:00400018 pc_temp:0040001c a:00000000 b:00000001 mul_reg:zzzzzzzzzzzzzzzz rd:00000001
+# inst:3c191001 cycle:00010 pc:0040001c pc_temp:00400020 a:00000000 b:00000001 mul_reg:zzzzzzzzzzzzzzzz rd:00010000
+# inst:3c191001 cycle:00100 pc:0040001c pc_temp:00400020 a:00000000 b:00000001 mul_reg:zzzzzzzzzzzzzzzz rd:00010000
+# inst:3c191001 cycle:10000 pc:0040001c pc_temp:00400020 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:10010000
+# inst:3c191001 cycle:00001 pc:0040001c pc_temp:00400020 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:10010000
+# inst:37390004 cycle:00010 pc:00400020 pc_temp:00400024 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:00001001
+# inst:37390004 cycle:00100 pc:00400020 pc_temp:00400024 a:00000000 b:00001001 mul_reg:zzzzzzzzzzzzzzzz rd:00001001
+# inst:37390004 cycle:10000 pc:00400020 pc_temp:00400024 a:10010000 b:00000004 mul_reg:zzzzzzzzzzzzzzzz rd:10010004
+# inst:37390004 cycle:00001 pc:00400020 pc_temp:00400024 a:10010000 b:00000004 mul_reg:zzzzzzzzzzzzzzzz rd:10010004
+# inst:20010002 cycle:00010 pc:00400024 pc_temp:00400028 a:10010000 b:00000004 mul_reg:zzzzzzzzzzzzzzzz rd:10010004
+# inst:20010002 cycle:00100 pc:00400024 pc_temp:00400028 a:10010000 b:00000004 mul_reg:zzzzzzzzzzzzzzzz rd:10010004
+# inst:20010002 cycle:10000 pc:00400024 pc_temp:00400028 a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:20010002 cycle:00001 pc:00400024 pc_temp:00400028 a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:20020002 cycle:00010 pc:00400028 pc_temp:0040002c a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:20020002 cycle:00100 pc:00400028 pc_temp:0040002c a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:20020002 cycle:10000 pc:00400028 pc_temp:0040002c a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:20020002 cycle:00001 pc:00400028 pc_temp:0040002c a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000002
+# inst:1422032f cycle:00010 pc:0040002c pc_temp:00400030 a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:1422032f cycle:00100 pc:0040002c pc_temp:00400030 a:00000000 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:1422032f cycle:00001 pc:0040002c pc_temp:00400030 a:00000002 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:00000000 cycle:00010 pc:00400030 pc_temp:00400034 a:00000002 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000008
+# inst:00000000 cycle:00100 pc:00400030 pc_temp:00400034 a:00000002 b:00000002 mul_reg:zzzzzzzzzzzzzzzz rd:00000008
+# inst:00000000 cycle:10000 pc:00400030 pc_temp:00400034 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:00000000 cycle:00001 pc:00400030 pc_temp:00400034 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:20010003 cycle:00010 pc:00400034 pc_temp:00400038 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:20010003 cycle:00100 pc:00400034 pc_temp:00400038 a:00000000 b:00000000 mul_reg:zzzzzzzzzzzzzzzz rd:00000000
+# inst:20010003 cycle:10000 pc:00400034 pc_temp:00400038 a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:20010003 cycle:00001 pc:00400034 pc_temp:00400038 a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:20030003 cycle:00010 pc:00400038 pc_temp:0040003c a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:20030003 cycle:00100 pc:00400038 pc_temp:0040003c a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:20030003 cycle:10000 pc:00400038 pc_temp:0040003c a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:20030003 cycle:00001 pc:00400038 pc_temp:0040003c a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000003
+# inst:1423032b cycle:00010 pc:0040003c pc_temp:00400040 a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:1423032b cycle:00100 pc:0040003c pc_temp:00400040 a:00000000 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:1423032b cycle:00001 pc:0040003c pc_temp:00400040 a:00000003 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:zzzzzzzz
+# inst:00000000 cycle:00010 pc:00400040 pc_temp:00400044 a:00000003 b:00000003 mul_reg:zzzzzzzzzzzzzzzz rd:00000018
+# End time: 16:53:19 on Jul 11,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 4
